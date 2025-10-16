@@ -4,13 +4,17 @@ using TMPro;
 using UnityEngine.UIElements;
 public class MenuManager : MonoBehaviour
 {
-
-    public void LoadScenePanel(string sceneName)
+    public TMP_Text panelname;
+    public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
     public void ExitApp()
     {
         Application.Quit();
+    }
+    public void SetPanelName(string name)
+    {
+        panelname.text = name;
     }
 }
