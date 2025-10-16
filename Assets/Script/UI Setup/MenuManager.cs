@@ -1,9 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UIElements;
 public class MenuManager : MonoBehaviour
 {
-    public void LoadScene(string SceneName)
+
+    public void LoadScenePanel(string sceneName)
     {
-        
+        SceneManager.LoadScene(sceneName);
+    }
+    public void ExitApp()
+    {
+        Application.Quit();
     }
 }
