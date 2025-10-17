@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEngine.UIElements;
+
 public class MenuManager : MonoBehaviour
 {
     public TMP_Text panelname;
@@ -17,4 +17,4 @@ public class MenuManager : MonoBehaviour
     {
         panelname.text = name;
     }
-}
+}   
